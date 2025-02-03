@@ -16,3 +16,4 @@ releases/**/*.tgz
 *#
 #*
 .vagrant
+src/bosh_openstack_cpi/vendor/package/ruby

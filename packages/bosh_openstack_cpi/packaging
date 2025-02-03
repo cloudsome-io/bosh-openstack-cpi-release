@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if ! command -v git &> /dev/null; then
+  apt-get update
+  apt-get install -y git
+fi
+
 set -e -x
 
 BOSH_PACKAGES_DIR=${BOSH_PACKAGES_DIR:-/var/vcap/packages}
